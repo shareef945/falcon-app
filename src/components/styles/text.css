@@ -1,0 +1,87 @@
+/** the default size of text is 16px,hence <p> isn't attributed for font size */
+h1 {
+    font-family: '.SFRounded', -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-weight: 700;
+    font-size: 32px;
+}
+
+h2 {
+    font-family: '.SFRounded', -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-weight: 700;
+    font-size: 28px;
+}
+
+h3 {
+    font-family: '.SFRounded', -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+}
+
+h10 {
+    font-family: '.SFRounded', -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-weight: 800;
+    font-size: 72px;
+    margin: 0;
+}
+
+.footer-text {
+    text-decoration: none;
+    color: black;
+    font-family: '.SFRounded', -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+}
+
+a:hover {
+    cursor: poDM Sans;
+}
+
+h4 {
+    font-family: '.SFRounded', -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.5;
+}
+
+p {
+    font-family: '.SFRounded', -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    margin: 0;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+
+.small-text {
+    font-size: 14px;
+}
+
+.text-disabled {
+    color: #A8A8A8;
+}
+
+.grey-text {
+    color: #A0AEC0;
+}
+
+.blue-text {
+    color: #0A2540;
+}
+
+.active-text {
+    color: #FF7700;
+}
+
+
+.card-text-regular {
+    text-decoration: none;
+    max-width: 300px;
+}
+
+@media screen and (max-width: 500px) {
+    h2 {
+        font-size: 20px;
+        max-width: 400px;
+    }
+    p{
+        max-width: 400px;
+    }
+}

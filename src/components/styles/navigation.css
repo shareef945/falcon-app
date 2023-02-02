@@ -1,0 +1,18 @@
+.titlebar {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin-left: 32px;
+    margin-top: 16px;
+    gap: 40px;
+    align-items: center;
+}
+
+@media screen and (max-width: 750px) {
+
+    .titlebar {
+        margin-left: 16px;
+        margin-top: 16px;
+        gap: 16px;
+    }
+}

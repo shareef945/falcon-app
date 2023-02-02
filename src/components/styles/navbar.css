@@ -1,0 +1,113 @@
+nav {
+    display: flex;
+    padding: 12px 24px;
+    width: auto;
+    background-color: #2a2550;
+    align-items: center;
+  }
+
+
+.brand-name {
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  justify-content: flex-start;
+}
+
+.brand-name:hover {
+  color: skyblue;
+}
+
+
+.navigation-items {
+  margin-left: auto;
+}
+
+.navigation-items ul {
+  display: flex;
+  padding: 0;
+}
+.navigation-items li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+.navigation-items li a {
+  text-decoration: none;
+  display: block;
+  font-family: '.SFRounded', -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-weight: 500;
+  color: white;
+  width: 100%;
+}
+
+.navigation-items li a:hover {
+  color: skyblue;
+}
+
+.navigation-items li a:active {
+  color: #FF7700;
+}
+
+.hamburger {
+  border: 0;
+  height: 40px;
+  width: 40px;
+  background: none;
+  color: white;
+  cursor: poDM Sans;
+  transition: #ff7700 1s ease-in-out;
+  display: none;
+  position: absolute;
+  right: 16px;
+}
+
+.navigation-items li a.activelink {
+  color: #FF7700;
+  }
+  
+
+.hamburger:hover {
+  color: skyblue;
+}
+
+@media screen and (max-width: 1000px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navigation-items.expanded ul {
+    display: block;
+  }
+
+  .navigation-items ul {
+    display: none;
+    position: absolute;
+    right: 0;
+    flex-direction: column;
+    z-index: 5;
+    width: 100%;
+    color: black;
+    border-top: 1px solid white;
+    background-color: #2a2550;
+  }
+
+  .navigation-items li a {
+    text-decoration: none;
+    display: block;
+    font-family: '.SFRounded', -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-weight: 500;
+    color: white;
+    width: 100%;
+  }
+
+  .navigation-items li {
+    text-align: center;
+    margin: 16px;
+  }
+
+  .navigation-items li:hover {
+    color: skyblue;
+  }
+}

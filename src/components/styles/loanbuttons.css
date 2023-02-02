@@ -1,0 +1,35 @@
+/** these are specific classes that aren't really used elsewhere */
+.loanBtnGroup {
+    margin-left: 32px;
+  }
+  
+  .loanBtnGroupNormal{
+    display: block;
+    margin-top: 32px;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 10px;
+    padding: 16px;
+    width: fit-content;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+     font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .loanBtnGroupNormal:hover {
+    background-color: #2a2550;
+    color: white;
+    border: 2px solid #FF7700;
+    border-radius: 10px;
+  }
+
+  
+  .loanBtnGroupActive{
+    background-color: #2a2550;
+    color: white;
+    border: 2px solid #FF7700;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+  

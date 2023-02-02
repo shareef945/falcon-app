@@ -1,0 +1,121 @@
+button {
+    position: relative;
+    font-family: '.SFRounded', -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: none;
+    text-shadow: none;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #FF7700;
+}
+
+
+.btn-disabled {
+    background-color: #D3D3D3;
+    color: #A8A8A8;
+    cursor: none;
+    pointer-events: none;
+}
+
+.primary-btn-enabled {
+    background-color: #2A2550;
+    color: white;
+    cursor: pointer;
+}
+
+.loanApplyBtn1Clickable:hover {
+    color: #ff7700;
+}
+
+/** call no-text-decoration as your Link className if you use the react Link tag instead of href */
+.no-text-decoration {
+    color: white;
+    text-decoration: none;
+}
+
+.no-text-decoration:hover {
+    color: #ff7700;
+}
+
+/** div class for buttons in a row */
+.group-btn-row {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.equal-space-group-btn-row {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.group-btn-row-unresponsive{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+
+/** Primary button class*/
+/** Buttons that execute primary action, e.g go to a page, next, submit
+*/
+.primary-btn {
+    background-color: #2A2550;
+    color: white;
+}
+
+.one-of-two-equal-primary-btn {
+    background-color: #2A2550;
+    color: white;
+    width: 48%;
+}
+
+.one-of-two-equal-primary-btn-disabled {
+    width: 48%; 
+    background-color: #D3D3D3;
+    color: #A8A8A8;
+    cursor: none;
+    pointer-events: none;
+}
+
+.secondary-btn {
+    background-color: #999999;
+    color: white;
+}
+
+
+@media screen and (max-width: 500px) {
+    .group-btn-row {
+        flex-direction: column;
+    }
+
+    button {
+        min-height: 48px;
+    }
+
+    .one-of-two-equal-primary-btn {
+        width: 100%;
+    }
+
+    .equal-space-group-btn-row {
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+}
+
+/** Secondary buttons
+E.g cancel, skip, decline
+*/

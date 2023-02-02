@@ -1,0 +1,15 @@
+figure {
+    margin: auto;
+    position: relative;
+}
+
+@media screen and (max-width: 750px) {
+    figure {
+        display: none;
+    }
+
+    .figure-show {
+        display: block;
+        margin: 0;
+    }
+}

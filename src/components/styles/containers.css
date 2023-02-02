@@ -1,0 +1,192 @@
+.body-col {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: flex-start;
+    padding-left: 96px;
+    padding-top: 64px;
+    padding-bottom: 16px;
+    padding-right: 32px;
+}
+
+.overlay-container {
+    position: relative;
+    margin: 0;
+}
+
+/** turn a div into a card with borders */
+.card-align-vertical {
+    padding: 32px;
+    border-radius: 16px;
+    border: solid 1px #dedcdc;
+    min-width: 200px;
+    max-width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.card-align-centre {
+    padding: 32px;
+    border-radius: 12px;
+    border: solid 1px #949494;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+}
+
+
+/* style a dropdown */
+.dropdown {
+    width: fit-content;
+    padding: 8px 14px;
+    border-radius: 8px;
+    min-width: 1np00px;
+    border: solid 1px #949494; 
+    font-family: '.SFRounded', -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 16px;
+}
+
+/* style an input */
+.edit-text-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    background: white;
+    border: solid 1px #E0E6EB;
+    border-radius: 8px;
+}
+
+.edit-text-container:focus {
+    border-color: #21afde;
+}
+
+.container-grey-bg {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 32px;
+    background: #E0E6EB;
+    width: fit-content;
+    border-radius: 18px;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    background: #2a2550;
+    color: white;
+    gap: 8px;
+    width: max-content;
+    margin-right: 16px;
+    border-radius: 16px;
+}
+
+.card-item-selected {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    background: #FF7700;
+    color: black;
+    gap: 8px;
+    width: max-content;
+    margin-right: 16px;
+    border-radius: 16px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.icon-text {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+/* responsive row */
+.row-responsive{
+    display: flex;
+    flex-direction: row;
+    margin-left: 96px;
+    margin-right: 32px;
+    gap: 72px;
+}
+
+
+
+/* centred horizontally */
+.row-responsive-centre-horiz {
+    display: flex;
+    flex-direction: row;
+    margin-left: 32px;
+    margin-right: 96px;
+    gap: 72px;
+    align-items: center;
+}
+
+.float-right-responsive {
+    margin-left: auto;
+}
+
+.float-right-preview {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1000px) {
+    .row-responsive{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 16px;
+        gap: 16px;
+    }
+
+    .row-responsive-centre-horiz {
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .float-right-responsive {
+        margin-left: 0;
+    }
+    .float-right-preview {
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+   
+    .row-responsive-centre-horiz {
+        align-items: center;
+    }
+
+    .container-grey-bg {
+        flex-direction: column;
+    }
+
+}

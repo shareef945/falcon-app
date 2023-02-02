@@ -1,0 +1,39 @@
+input {
+    border-style: hidden;
+    outline: none;
+    /* min-width: 200px; */
+    width: 95%;
+    background: none;
+    font-weight: 400;
+    font-family: '.SFRounded', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 16px;
+}
+
+.input {
+    border: solid 1px #949494;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.input:focus {
+    border: solid 1px #21afde;
+}
+
+
+select {
+    font-size: 16px;
+    font-family: '.SFRounded', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.dropdown {
+    width: fit-content;
+    border-radius: 12px;
+    border: solid 1px #949494;
+    padding: 8px;
+}
+
+@media screen and (max-width: 500px) {
+    input {
+        max-width: 400px;
+    }
+}
