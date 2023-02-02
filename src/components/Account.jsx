@@ -31,7 +31,6 @@ export default function Account() {
     };
     const [count2, setCount2] = useState(0);
 
-
     useEffect(() => {
         document.title = "Falcon | Manage your account";
 

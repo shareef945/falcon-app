@@ -10,12 +10,14 @@ export default function TransactionPage() {
   const [tableData, setTableData] = useState(useLocation().state.tableData);
   let navigate = useNavigate();
 
+
+
+
   const columns = [
     { field: "_id", headerName: "ID", flex: 1 },
-    { field: "Amount Received", headerName: "Amount", flex: 1 },
-    { field: "Date Received", headerName: "Date", flex: 1 },
+    { field: "Amount", headerName: "Amount", flex: 1 },
+    { field: "Date", headerName: "Date", flex: 1 },
   ];
-
 
   const customer = JSON.parse(sessionStorage.getItem("falcon-auth-token"));
 
