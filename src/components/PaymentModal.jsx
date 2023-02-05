@@ -130,20 +130,8 @@ export default function PaymentModal({
         const transactionUpdates2 = await postTransaction(transactionData);
         // todo: stop a recursive loop going on
       }
-      const textBody = `Dear ${
-        customer["First Name"]
-      }, your payment of ₵${prettifyNumber(
-        paymentAmount
-      )} was received for product ${
-        selectedCard["Product ID"]
-      }. You've paid ₵${prettifyNumber(
-        selectedCard["Principal"] +
-          selectedCard["Interest"] -
-          (parseInt(balance_pre_transaction) - amount_paid)
-      )} to date and your balance is ${
-        parseInt(balance_pre_transaction) - amount_paid
-      }`;
-      await sendSMS(textBody, customer["Phone Number"]);
+
+      // await sendSMS(textBody, customer["Phone Number"]);
       // update product balance field with balance - amount_paid
       const productUpdate = await patchProduct({
         Balance: parseInt(balance_pre_transaction) - amount_paid,
@@ -246,6 +234,20 @@ export default function PaymentModal({
         "Balance Post Transaction":
           parseInt(balance_pre_transaction) - amount_paid,
       };
+      const textBody = `Dear ${
+        customer["First Name"]
+      }, your payment of ₵${prettifyNumber(
+        paymentAmount
+      )} was received for product ${
+        selectedCard["Product ID"]
+      }. You've paid ₵${prettifyNumber(
+        selectedCard["Principal"] +
+          selectedCard["Interest"] -
+          (parseInt(balance_pre_transaction) - amount_paid)
+      )} to date and your balance is ${
+        parseInt(balance_pre_transaction) - amount_paid
+      }`;
+      sendSMS(textBody, customer["Phone Number"]);
 
       // post to transaction api
       const transactionUpdates = await postTransaction(transactionData);
